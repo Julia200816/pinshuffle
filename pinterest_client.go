@@ -97,7 +97,7 @@ func NewClient() *PinterestClient {
 }
 
 func (client *PinterestClient) GetAuthUri() string {
-	return "https://www.pinterest.com/oauth/?&client_id=1478464" + client.AppID + "&redirect_uri=" + client.RedirectUri + "&response_type=code" + "&scope=" + client.Scopes
+	return "https://www.pinterest.com/oauth/?&client_id=1540497" + client.AppID + "&redirect_uri=" + client.RedirectUri + "&response_type=code" + "&scope=" + client.Scopes
 }
 
 func (client *PinterestClient) FetchAccessToken(codeKey string) error {
