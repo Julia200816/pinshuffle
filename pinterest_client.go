@@ -87,7 +87,7 @@ func NewClient() *PinterestClient {
 		Secret:      os.Getenv("CLIENT_SECRET"),
 		MainURL:     "https://julias-pinterest-randomizer.osc-fr1.scalingo.io",
 		BaseURL:     "https://api.pinterest.com/v5",
-		RedirectUri: "https://julias-pinterest-randomizer.osc-fr1.scalingo.io/redirect/",
+		RedirectUri: "https://pinshuffle.fly.dev/redirect/",
 		Scopes:      "user_accounts:read,catalogs:read,boards:read,boards:read_secret,pins:read,pins:read_secret",
 		HttpClient: &http.Client{
 			Timeout: 10 * time.Second,
